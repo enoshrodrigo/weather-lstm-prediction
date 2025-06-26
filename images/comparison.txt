@@ -1,0 +1,54 @@
+===== MODEL COMPARISON SUMMARY =====
+Overall Metrics:
+LSTM: MSE = 0.7385, MAE = 0.5674, Training time: 550.04 seconds
+BIDIRECTIONAL: MSE = 0.6627, MAE = 0.5166, Training time: 1460.77 seconds
+ENHANCED: MSE = 0.6166, MAE = 0.5012, Training time: 990.39 seconds
+HYBRID: MAE = 0.5203, Training time: 1094.40 seconds
+HYBRID classification accuracy: 0.8462
+ENSEMBLE: MAE = 2.0558
+
+Best model for each target variable:
+temperature_2m_max: ENHANCED (MAE: 1.18)
+temperature_2m_min: ENSEMBLE (MAE: 1.27)
+precipitation_sum: ENHANCED (MAE: 3.45)
+
+Precipitation Prediction Performance by Day:
+
+Day 1:
+  LSTM: MAE = 4.62, RMSE = 7.92
+  BIDIRECTIONAL: MAE = 3.61, RMSE = 6.54
+  ENHANCED: MAE = 3.33, RMSE = 6.13
+  HYBRID: MAE = 3.68, RMSE = 6.31
+  ENSEMBLE: MAE = 3.58, RMSE = 6.31
+
+Day 2:
+  LSTM: MAE = 4.69, RMSE = 7.90
+  BIDIRECTIONAL: MAE = 3.66, RMSE = 6.62
+  ENHANCED: MAE = 3.41, RMSE = 6.24
+  HYBRID: MAE = 3.66, RMSE = 6.43
+  ENSEMBLE: MAE = 3.64, RMSE = 6.41
+
+Day 3:
+  LSTM: MAE = 4.77, RMSE = 7.93
+  BIDIRECTIONAL: MAE = 3.70, RMSE = 6.68
+  ENHANCED: MAE = 3.47, RMSE = 6.36
+  HYBRID: MAE = 3.77, RMSE = 6.56
+  ENSEMBLE: MAE = 3.74, RMSE = 6.54
+
+Day 4:
+  LSTM: MAE = 4.65, RMSE = 7.94
+  BIDIRECTIONAL: MAE = 3.77, RMSE = 6.74
+  ENHANCED: MAE = 3.53, RMSE = 6.44
+  HYBRID: MAE = 3.87, RMSE = 6.57
+  ENSEMBLE: MAE = 3.78, RMSE = 6.56
+
+Day 5:
+  LSTM: MAE = 4.76, RMSE = 7.92
+  BIDIRECTIONAL: MAE = 3.77, RMSE = 6.79
+  ENHANCED: MAE = 3.52, RMSE = 6.50
+  HYBRID: MAE = 3.86, RMSE = 6.64
+  ENSEMBLE: MAE = 3.79, RMSE = 6.62
+Model saved as 'sri_lanka_weather_forecast_lstm_model.h5'
+Model saved as 'sri_lanka_weather_forecast_bidirectional_model.h5'
+Model saved as 'sri_lanka_weather_forecast_enhanced_model.h5'
+Hybrid model saved as 'sri_lanka_weather_forecast_hybrid_model.h5'
